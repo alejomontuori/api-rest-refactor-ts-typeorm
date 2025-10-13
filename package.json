@@ -1,0 +1,24 @@
+{
+  "name": "api-rest-refactor-ts-typeorm",
+  "version": "1.0.0",
+  "description": "Proyecto de práctica profesional donde se refactorizó una API REST previa (hecha con SQL directo) utilizando **TypeScript** y **TypeORM** para mejorar la estructura, tipado y mantenibilidad del código.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejomontuori/api-rest-refactor-ts-typeorm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejomontuori/api-rest-refactor-ts-typeorm/issues"
+  },
+  "homepage": "https://github.com/alejomontuori/api-rest-refactor-ts-typeorm#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
