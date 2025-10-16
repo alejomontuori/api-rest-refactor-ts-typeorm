@@ -1,9 +1,18 @@
-import express from 'express';
-import cors from 'cors';
-import morgan from 'morgan';
+import app from "./app.ts";
+import AppDataSource from "./db/data-source.ts";
 
-const app = express();
+async function main() {
+  try {
+    await AppDataSource.initialize();
+    console.log("Conexion exitosa");
+    app.listen(3306, () => {
+      console.log("Server activo");
+    });
+  } catch (err) {
+    if (err instanceof Error) {
+      console.log(err.message);
+    }
+  }
+}
 
-app.listen(6505, () => {
-    console.log("Server activo")
-});
+main();
