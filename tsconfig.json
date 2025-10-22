@@ -2,17 +2,19 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-      "rootDir": "./src",
-      "outDir": "./build",
+    "rootDir": "./src",
+    "outDir": "./build",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "noEmit": true,
     "allowImportingTsExtensions": true,
     "module": "nodenext",
     "moduleResolution": "NodeNext",
     "target": "es2022",
-    "esModuleInterop": true, 
+    "esModuleInterop": true,
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -37,12 +39,13 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
+    "strictPropertyInitialization": false,
     "strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
